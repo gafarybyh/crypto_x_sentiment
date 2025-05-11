@@ -1,4 +1,4 @@
-# Simple X (Twitter) Crypto Sentiment Analyzer with Twikit and Gemini
+# X (Twitter) Crypto Sentiment Gemini
 
 Aplikasi python ini menganalisis sentimen cryptocurrency di platform X (Twitter) menggunakan Gemini API, mengumpulkan tweet berdasarkan kata kunci pencarian, kemudian menganalisis sentimen dan tren.
 
