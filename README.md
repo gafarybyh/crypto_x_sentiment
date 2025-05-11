@@ -26,7 +26,7 @@ Aplikasi Python ini menganalisis sentimen cryptocurrency di platform X (Twitter)
 
     ```bash
     git clone https://github.com/gafarybyh/crypto_x_sentiment.git
-    cd twikit_gemini
+    cd crypto_x_sentiment
     ```
 
 2. Buat dan aktifkan virtual environment:
