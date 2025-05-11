@@ -84,32 +84,31 @@ Aplikasi akan meminta Anda untuk memasukkan kata kunci pencarian (misalnya `#btc
 ## 📋 Contoh Output
 
 ```
-🔥 #BTC X SENTIMENT 🔥
+🔥 #BTC X Sentiment 🔥
 
-📊 Total tweets: 35
+📊 Total tweets: 38
+✅ Positive: 18 (avg score: 0.79)
+❌ Negative: 3 (avg score: -0.63)
+⚪ Neutral: 17
+🏆 Dominant sentiment: Positive
 
-✅ Positive: 22 (avg score: 0.78)
-❌ Negative: 8 (avg score: 0.65)
-⚪ Neutral: 5
+**Momentum analysis:**
+Sentiment around #BTC appears to be building up strongly, driven by key technical indicators turning bullish and anticipation of price breakouts towards new highs. High engagement on positive tweets indicates growing conviction.
 
-🏆 Dominant sentiment: positive
+**Key emerging narratives:**
+*   Anticipation of breaking $100K and setting new All-Time Highs.
+*   Technical indicators flashing bullish signals (MACD, Buy signals).
+*   Focus on liquidation levels for short positions.
+*   Discussion around BTC Dominance and its potential impact on Altcoins.
+*   Comparisons to previous market cycles and Halving related price analysis.
 
-Momentum analysis:
-Sentiment is building up with increasing engagement on positive tweets about Bitcoin's price recovery above $60K.
+**Notable influencer activity:**
+Several accounts show high engagement with bullish calls, including @Titan of Crypto, @Thomas Lauder ⚖️, and @Kevin Svenson, boosting pos
+itive sentiment with technical analysis and price targets.
 
-Key emerging narratives:
-• ETF inflows accelerating after recent market correction
-• Technical analysis suggesting strong support at $58K level
-• Institutional buying pressure increasing
-• Reduced selling from miners
-• Positive regulatory signals from SEC commissioner statements
-
-Notable influencer activity:
-@michaelsaylor and @CryptoCred tweets showing bullish sentiment are receiving high engagement
-
-Top tweets:
-- @bitcoinmagazine: "BREAKING: BlackRock's #BTC ETF sees $250M inflows today as Bitcoin reclaims $60K" (RT: 1245, ❤️: 3782)
-- @CryptoCred: "The $BTC chart is showing a classic accumulation pattern. Expecting a move to $65K within the week." (RT: 876, ❤️: 2103)
+**Top tweets:**
+- @Thomas Lauder ⚖️: “Good morning! #BTC around 100k https://t.co/hopdhpMmml” (RT: 275, ❤️: 1660)
+- @Titan of Crypto: “#Bitcoin Bullish Crossover is Happening! 🔥\n\nThe MACD is flipping bullish on the weekly chart.\n\n#BTC momentum is shifting and this could be the start of a bigger move. 🚀 https://t.co/smSikCtF84” (RT: 275, ❤️: 1076)
 ```
 
 ## 📄 Lisensi
