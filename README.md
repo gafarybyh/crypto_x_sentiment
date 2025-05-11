@@ -17,7 +17,7 @@ Aplikasi python ini menganalisis sentimen cryptocurrency di platform X (Twitter)
 ## 🔧 Prasyarat
 
 -   Python 3.10+
--   Akun X (Twitter)
+-   Akun X (Twitter) (recommended to use second account)
 -   API Key Google Gemini
 
 ## 📦 Instalasi
