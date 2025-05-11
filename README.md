@@ -7,7 +7,7 @@ Aplikasi Python ini menganalisis sentimen cryptocurrency di platform X (Twitter)
 -   🔍 Pencarian tweet berdasarkan kata kunci atau hashtag (contoh: #BTC, #ETH)
 -   📊 Pengumpulan tweet dari berbagai halaman dengan penanganan rate limiting
 -   🤖 Analisis sentimen menggunakan Google Gemini AI
--   📈 Laporan sentimen yang komprehensif termasuk:
+-   📈 Laporan sentimen termasuk:
     -   Breakdown sentimen (positif, negatif, netral)
     -   Analisis momentum
     -   Narasi utama yang sedang trending
