@@ -122,7 +122,7 @@ async def _get_multiple_pages_of_tweets(search_query: str = "#btc", search_produ
                 except Exception as e:
                     print(f'{datetime.now()} - Error fetching next page: {str(e)}')
                     # Tunggu lebih lama jika terjadi error
-                    await asyncio.sleep(30)
+                    await asyncio.sleep(10)
                     continue
             
             # If we got here, we either collected enough tweets or ran out of pages
@@ -141,15 +141,15 @@ async def _get_multiple_pages_of_tweets(search_query: str = "#btc", search_produ
         except NotFound as e:
             print(f'{datetime.now()} - 404 Not Found error during initial fetch: {str(e)}')
             # Try a different search approach or wait before retrying
-            print(f'{datetime.now()} - Waiting 30 seconds before retry {retry_count+1}/{max_retries}...')
-            await asyncio.sleep(30)
+            print(f'{datetime.now()} - Waiting 10 seconds before retry {retry_count+1}/{max_retries}...')
+            await asyncio.sleep(10)
             retry_count += 1
             continue
         except Exception as e:
             print(f'{datetime.now()} - Error during tweet collection: {str(e)}')
             # Try again after a delay
-            print(f'{datetime.now()} - Waiting 30 seconds before retry {retry_count+1}/{max_retries}...')
-            await asyncio.sleep(30)
+            print(f'{datetime.now()} - Waiting 10 seconds before retry {retry_count+1}/{max_retries}...')
+            await asyncio.sleep(10)
             retry_count += 1
             continue
     
