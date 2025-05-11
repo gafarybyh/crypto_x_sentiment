@@ -1,7 +1,7 @@
 from datetime import datetime
 import google.generativeai as genai
 from gemini.prompt import GEMINI_PROMPT
-from config import GEMINI_API_KEY, logger
+from config import GEMINI_API_KEY, GEMINI_MODEL, logger
 
 
 # TODO* FETCH GEMINI API
@@ -18,7 +18,7 @@ def get_gemini_response(prompt):
         genai.configure(api_key=GEMINI_API_KEY)
         # gemini-2.5-flash-preview-04-17
         # gemini-2.0-flash
-        gemini_model = "gemini-2.5-flash-preview-04-17"
+        gemini_model = GEMINI_MODEL
     
         model = genai.GenerativeModel(gemini_model)
         response = model.generate_content(prompt)

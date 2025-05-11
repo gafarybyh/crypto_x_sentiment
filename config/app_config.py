@@ -24,6 +24,10 @@ PASSWORD = os.getenv("PASSWORD")
 
 # Gemini API Key
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL")
+
+# Retry
+MAX_RETRY = int(os.getenv("MAX_RETRY"))
 
 # Cookies Path
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))

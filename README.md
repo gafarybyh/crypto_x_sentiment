@@ -64,6 +64,13 @@ Aplikasi python ini menganalisis sentimen cryptocurrency di platform X (Twitter)
 
     # Gemini API Key
     GEMINI_API_KEY = your_gemini_api_key
+
+    # Gemini Model
+    # [gemini-2.5-flash-preview-04-17, gemini-2.0-flash]
+    GEMINI_MODEL = gemini-2.5-flash-preview-04-17
+
+    # Max Retry (if errors getting tweets)
+    MAX_RETRY = 2
     ```
 
 ## 🚀 Cara Penggunaan

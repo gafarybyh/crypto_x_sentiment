@@ -3,7 +3,7 @@ import asyncio
 import os
 from datetime import datetime
 from random import randint
-from config import USERNAME, EMAIL, PASSWORD, cookies_path_file, logger
+from config import USERNAME, EMAIL, PASSWORD, MAX_RETRY, cookies_path_file, logger
 
 # TODO* LOGIN TWITTER
 async def _login_twitter():
@@ -53,7 +53,7 @@ async def _get_multiple_pages_of_tweets(search_query: str = "#btc", search_produ
         list[Tweet]: List of tweets
     """
     all_tweets = []
-    max_retries = 3  # Add retry limit
+    max_retries = MAX_RETRY  # Add retry limit
     retry_count = 0
    
     
