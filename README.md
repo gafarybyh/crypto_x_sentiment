@@ -13,11 +13,18 @@ Aplikasi python ini menganalisis sentimen cryptocurrency di platform X (Twitter)
     -   Narasi utama yang sedang trending
     -   Aktivitas influencer
     -   Tweet dengan engagement tertinggi
+    -   Sinyal trading (BULLISH, BEARISH, NEUTRAL)
+    -   Tingkat kepercayaan analisis
+-   📊 Visualisasi data sentimen:
+    -   Pie chart distribusi sentimen
+    -   Line chart tren sentimen dari waktu ke waktu
+    -   Stacked area chart komposisi sentimen
+-   📜 Penyimpanan riwayat analisis untuk perbandingan
 
 ## 🔧 Prasyarat
 
 -   Python 3.10+
--   Akun X (Twitter) (recommended to use second account)
+-   Akun X (Twitter) (disarankan menggunakan akun kedua)
 -   API Key Google Gemini
 
 ## 📦 Instalasi
@@ -87,6 +94,18 @@ Aplikasi akan meminta Anda untuk memasukkan kata kunci pencarian (misalnya `#btc
 2. Mengumpulkan minimal 30 tweet terkait kata kunci
 3. Menganalisis tweet menggunakan Gemini AI
 4. Menampilkan laporan sentimen yang komprehensif
+5. Menyimpan hasil analisis untuk perbandingan di masa mendatang
+6. Menawarkan visualisasi data sentimen jika terdapat riwayat analisis sebelumnya
+
+### Visualisasi Data
+
+Jika Anda telah melakukan beberapa analisis untuk kata kunci yang sama, aplikasi akan menawarkan untuk menampilkan visualisasi:
+
+1. **Pie Chart** - Menampilkan distribusi sentimen saat ini (positif, negatif, netral)
+2. **Line Chart** - Menampilkan tren sentimen dari waktu ke waktu
+3. **Stacked Area Chart** - Menampilkan komposisi sentimen dari waktu ke waktu
+
+Semua visualisasi akan disimpan di folder `charts/` dengan format nama yang mencakup kata kunci dan timestamp.
 
 ## 📋 Contoh Output
 
@@ -110,13 +129,35 @@ Sentiment around #BTC appears to be building up strongly, driven by key technica
 *   Comparisons to previous market cycles and Halving related price analysis.
 
 **Notable influencer activity:**
-Several accounts show high engagement with bullish calls, including @Titan of Crypto, @Thomas Lauder ⚖️, and @Kevin Svenson, boosting pos
-itive sentiment with technical analysis and price targets.
+Several accounts show high engagement with bullish calls, including @Titan of Crypto, @Thomas Lauder ⚖️, and @Kevin Svenson, boosting positive sentiment with technical analysis and price targets.
 
 **Top tweets:**
-- @Thomas Lauder ⚖️: “Good morning! #BTC around 100k https://t.co/hopdhpMmml” (RT: 275, ❤️: 1660)
-- @Titan of Crypto: “#Bitcoin Bullish Crossover is Happening! 🔥\n\nThe MACD is flipping bullish on the weekly chart.\n\n#BTC momentum is shifting and this could be the start of a bigger move. 🚀 https://t.co/smSikCtF84” (RT: 275, ❤️: 1076)
+- @Thomas Lauder ⚖️: "Good morning! #BTC around 100k https://t.co/hopdhpMmml" (RT: 275, ❤️: 1660)
+- @Titan of Crypto: "#Bitcoin Bullish Crossover is Happening! 🔥\n\nThe MACD is flipping bullish on the weekly chart.\n\n#BTC momentum is shifting and this could be the start of a bigger move. 🚀 https://t.co/smSikCtF84" (RT: 275, ❤️: 1076)
+
+**Trading signal:**
+BULLISH
+
+**Confidence level:**
+⭐⭐⭐⭐
 ```
+
+## 🔄 Penanganan Error
+
+Aplikasi ini dilengkapi dengan sistem retry yang akan mencoba ulang jika terjadi error saat mengambil tweet:
+
+-   Penanganan rate limiting dengan waktu tunggu yang sesuai
+-   Retry otomatis jika terjadi error 404 atau error lainnya
+-   Login ulang jika cookies tidak valid
+-   Logging error untuk memudahkan debugging
+
+## 📊 Riwayat Analisis
+
+Aplikasi menyimpan riwayat analisis di file `sentiment_history.json`, yang memungkinkan Anda untuk:
+
+-   Membandingkan sentimen dari waktu ke waktu
+-   Melihat perubahan tren untuk kata kunci tertentu
+-   Menganalisis pergeseran sentimen sebelum pergerakan harga
 
 ## 📄 Lisensi
 

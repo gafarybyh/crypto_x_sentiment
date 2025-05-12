@@ -3,7 +3,6 @@ import google.generativeai as genai
 from gemini.prompt import GEMINI_PROMPT
 from config import GEMINI_API_KEY, GEMINI_MODEL, logger
 
-
 # TODO* FETCH GEMINI API
 def get_gemini_response(prompt):
     """

@@ -39,6 +39,8 @@ logging_config = {
         "httpcore": {"level": "INFO", "propagate": False},
         "twikit": {"level": "INFO", "propagate": False},
         "google-generativeai": {"level": "INFO", "propagate": False}, 
+        "matplotlib": {"level": "INFO", "propagate": False}, 
+        "PIL.PngImagePlugin": {"level": "INFO", "propagate": False}, 
     }
 }
 
