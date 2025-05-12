@@ -1,6 +1,6 @@
-# X (Twitter) Crypto Sentiment Gemini
+# X (Twitter) Crypto Sentiment
 
-Aplikasi python ini menganalisis sentimen cryptocurrency di platform X (Twitter) menggunakan Gemini API, mengumpulkan tweet berdasarkan kata kunci pencarian, kemudian menganalisis sentimen dan tren.
+Aplikasi python ini menganalisis sentimen cryptocurrency di platform X (Twitter) menggunakan Gemini, mengumpulkan tweet berdasarkan kata kunci pencarian, kemudian menganalisis sentimen dan tren.
 
 ## ✨ Fitur Utama
 
